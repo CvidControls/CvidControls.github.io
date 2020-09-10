@@ -1,4 +1,4 @@
-const ready = 'Yes! I am always ready! Thank you for using our CvC 🤗. If you need help in the installation, check this file:///Volumes/KRISHAANG/custom_video_controls-API/installation.html';
+const ready = 'Yes! I am always ready! Thank you for using our CvC 🤗.';
 
 var fontAwsome = document.createElement('link');
 var css = document.createElement('link');

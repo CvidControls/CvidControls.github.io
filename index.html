@@ -19,6 +19,11 @@
 <script type="application/ld+json">{"headline":"Welcome to Custom video controls","@type":"WebSite","url":"https://cvidcontrols.github.io/","name":"CvidControls.github.io","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
 
   <body>
@@ -31,10 +36,14 @@
           <h1 id="project_title">Custom Video Controls</h1>
           <h2 id="project_tagline">Give life to your video controls</h2>
 
+          <a href="#install">Installation</a>
+
+          <a href="#usage">Usage</a>
+
           <section id="downloads">
-            <a class="zip_download_link" href="https://github.com/pages-themes/slate/zipball/master">Download this project as a
+            <a class="zip_download_link" download href="https://cvidcontrols.github.io/v/1.0.0/code/CvC-v1.0.0-zip.zip">Download this project as a
               .zip file</a>
-            <a class="tar_download_link" href="https://github.com/pages-themes/slate/tarball/master">Download this project as a
+            <a class="tar_download_link" download href="https://cvidcontrols.github.io/v/1.0.0/code/CvC-v1.0.0-gzip.tar.gz">Download this project as a
               tar.gz file</a>
           </section>
           
@@ -52,36 +61,51 @@
 
 <p>Add CvC to your Website today.</p>
 
-<h3 id="markdown">Markdown</h3>
+<h3 id="install">Installation</h3>
 
-<p>Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for</p>
+<p>Use our hosted CDN:</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Syntax highlighted code block
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script src="https://cvidcontrols.github.io/v/1.0.0/code/CvC.js" type="text/javascript"&gt;&lt;/script&gt;</code></pre></div></div>
 
-<span class="gh"># Header 1</span>
-<span class="gu">## Header 2</span>
-<span class="gu">### Header 3</span>
-<span class="p">
--</span> Bulleted
-<span class="p">-</span> List
-<span class="p">
-1.</span> Numbered
-<span class="p">2.</span> List
+<p>To check weather CvC has installed successfuly, type below:</p>
 
-<span class="gs">**Bold**</span> and _Italic_ and <span class="sb">`Code`</span> text
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script type="text/javascript"&gt;
+  alert(ready);
+&lt;/script&gt;</code></pre></div></div>
 
-<span class="p">[</span><span class="nv">Link</span><span class="p">](</span><span class="sx">url</span><span class="p">)</span> and !<span class="p">[</span><span class="nv">Image</span><span class="p">](</span><span class="sx">src</span><span class="p">)</span>
+<br>
+
+<p>You should see an alert saying:
+
+  <br>
+
+  <code class="language-plaintext highlighter-rouge">Yes! I am always ready! Thank you for using our CvC 🤗.</code>
+
+  <br>
+
+  after this, you should remove the alert script.
+
+  </p>
+
+
+<h3 id="usage">Usage</h3>
+  Adding the video:
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var yourVideo = {
+  append: 'your-video-container',
+  src: 'videos/your-video.mp4',
+  id: 'id-of-your-video',
+  class: 'class-of-your-video',
+  width: '800px',
+  thumb: 'your-video-thumbnail.png',
+  autoplay: false,
+  muted: false,
+  vol: 1.0,
+  loop: true,
+  context: 'default'
+}
+
+newCvC(yourVideo);
 </code></pre></div></div>
-
-<p>For more details see <a href="https://guides.github.com/features/mastering-markdown/">GitHub Flavored Markdown</a>.</p>
-
-<h3 id="jekyll-themes">Jekyll Themes</h3>
-
-<p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/CvidControls/CvidControls.github.io/settings">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p>
-
-<h3 id="support-or-contact">Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://docs.github.com/categories/github-pages-basics/">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
 
       </section>
     </div>
@@ -94,7 +118,7 @@
       </footer>
     </div>
 
-    <script src="v/1.0.0/code/CvC.js" type="text/javascript"></script>
+    <script src="v/v1.0.0/code/CvC.js" type="text/javascript"></script>
 
         <script type="text/javascript">
           var vids = {
